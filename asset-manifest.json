@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Kaban-board/static/css/main.bfcd7d65.chunk.css",
-    "main.js": "/Kaban-board/static/js/main.09796634.chunk.js",
-    "main.js.map": "/Kaban-board/static/js/main.09796634.chunk.js.map",
+    "main.js": "/Kaban-board/static/js/main.aa85a31d.chunk.js",
+    "main.js.map": "/Kaban-board/static/js/main.aa85a31d.chunk.js.map",
     "runtime-main.js": "/Kaban-board/static/js/runtime-main.75f6d279.js",
     "runtime-main.js.map": "/Kaban-board/static/js/runtime-main.75f6d279.js.map",
     "static/js/2.1c49ec18.chunk.js": "/Kaban-board/static/js/2.1c49ec18.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.75f6d279.js",
     "static/js/2.1c49ec18.chunk.js",
     "static/css/main.bfcd7d65.chunk.css",
-    "static/js/main.09796634.chunk.js"
+    "static/js/main.aa85a31d.chunk.js"
   ]
 }
