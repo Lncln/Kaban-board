@@ -1,4 +1,4 @@
-https://lncln.github.io/Kaban-board/
+https://lncln.github.io/Kaban-board/ - ссылка рабочая!
 Возникли серьезные проблемы с disabled на кнопку
 
 Друзья зовут меня Рома-костыль
