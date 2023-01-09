@@ -30,7 +30,7 @@ const TaskDetail = props => {
 
 	return (
 		<div className={css.wrapper}>
-		<Link to='/' className={css.homeLink}>&#10005; Back</Link>
+		
 		{task ? (
 			<>
 				<div className={css.header}>
@@ -38,15 +38,16 @@ const TaskDetail = props => {
 						{task.title}
 					</h2>
 				</div>
-				<p>
+				<p className={css.description}>
 				{isOnfocus ?  <textarea value={value} onChange={event => setValue(event.target.value)} onBlur={changeDescription}  placeholder='Enter description' cols="30" rows="10" autoFocus  /> : <span onClick={() => setOnFocus(true)}>{task.description || 'This task has no description'}</span>}
 				</p>
 			</>
 		) : (
-			<h2>
+			<h2 className={css.description}>
 				Task {taskId} not found
 			</h2>
 		)}
+		<Link to='/' className={css.homeLink}>&#10005;</Link>
 		</div>
 	)
 }

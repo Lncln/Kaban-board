@@ -1,23 +1,30 @@
 .list {
-	width: 350px;
-	background: #fff;
-	padding: 20px;
-	border-radius: 8px;
+	width: 282px;
+	background: #EBECF0;
+	padding: 12px;
+	border-radius: 10px;
 	box-sizing: border-box;
 	margin: 15px;
 	box-shadow: 2px 2px 8px rgb(0 0 0 / 20%);
+	font-family: 'Roboto', Roboto;
+	font-size: 18px;
+	line-height: 21px;
 }
 
 .listTitle {
+	width: 232px;
+	height: 17px;
 	margin-top: 0;
 }
 
 .task {
-	background: #465671;
+	background: rgba(255, 255, 255, 1);
 	color: #fff;
-	margin: 7px 0;
+	margin: 15px 0;
 	padding: 8px;
-	border-radius: 8px;
+	border-radius: 5px;
+	color: rgba(0, 0, 0, 1);
+	width: 242px;
 }
 
 .task:hover {
@@ -32,10 +39,11 @@
 	background: none;
 	border: none;
 	appearance: none;
-	font-size: 15px;
-	color: #737373;
+	font-size: 18px;
+	color: rgba(94, 108, 132, 1);
 	margin-top: 15px;
 	cursor: pointer;
+	font-family: 'Roboto';
 }
 
 .addButton:hover {

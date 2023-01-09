@@ -8,12 +8,13 @@ const FormAddNewTask = props => {
 		title: '',
 		description: ''
 	})
+
 	function handleSubmit(e) {
 		e.preventDefault()
 		if (values.title) {
 			addNewTask(values.title, values.description)
 		} else {
-			alert('title is req') // ну типа самое простое
+			alert('title is req') // ну типа самое простое, а другое и не знаю
 		}
 		setFormVisible(false) // А надо ли прятать при добавлении карточки? Если я хочу 2 карточки добавить сразу
 	}

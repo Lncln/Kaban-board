@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import css from '../header/Header.module.css'
 import ArrowDown from '../../assets/ArrowDown.svg'
 import ArrowUp from '../../assets/ArrowUp.svg'
@@ -8,7 +8,8 @@ import UserPhoto from '../../assets/Photo.svg'
 function PersonalAccount() {
 
 
-    return (<div className={css.PersonalAccount}>
+    return (<>
+    <button className={css.PersonalAccount}>
         <div className={css.PersonalAccountPhoto}>
             <img className={css.UserPhoto} src={UserPhoto} alt='' />
         </div>
@@ -18,7 +19,8 @@ function PersonalAccount() {
                 {/* <img className={css.ArrowUp} src={ArrowUp} alt='' /> */}
             </span>
         </div>
-    </div>
+    </button>
+    </>
     )
 }
 

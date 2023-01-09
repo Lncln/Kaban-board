@@ -2,12 +2,13 @@
 	margin-top: 15px;
 	display: flex;
 	flex-direction: column;
+	line-height: 21px;
 }
 
 .input {
 	display: block;
-	border: 1px solid #465671;
-	border-radius: 8px;
+	border: none;
+	border-radius: 5px;
 	margin-bottom: 7px;
 	padding: 8px;
 }
@@ -18,15 +19,17 @@
 }
 
 .submit {
-	background: #465671;
+	background: rgba(0, 121, 191, 1);
+	font-size: 18px;
 	color: #fff;
 	border: none;
-	border-radius: 8px;
+	border-radius: 5px;
 	padding: 8px 0;
-	width: 50px;
+	width: 102px;
 	cursor: pointer;
 	align-self: flex-start;
 	margin-bottom: -15px;
+	line-height: 21px;
 }
 
 .submit:hover {

@@ -18,7 +18,7 @@ const Board = props => {
 	}
 
 	const lists = ['backlog', 'Ready', 'inProgress', 'Finished']
-	return (
+	return (<>
 		<div className={css.board}>
 			{Object.values(LIST_TYPES).map((type) => {
 				const listTasks = tasks.filter(task => task.status === type)
@@ -27,7 +27,9 @@ const Board = props => {
 				)
 			})}
 		</div>
+	</>
 	)
+
 }
 
 export default Board

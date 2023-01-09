@@ -1,7 +1,8 @@
 .wrapper {
 	background: #fff;
-	border-radius: 8px;
+	border-radius: 5px;
 	padding: 20px;
+	flex-wrap: wrap;
 }
 
 .header {
@@ -12,6 +13,13 @@
 
 .title {
 	margin: 0;
+	font-size: 24px;
+	line-height: 28px;
+}
+
+.description {
+	font-size: 18px;
+	line-height: 21px;
 }
 
 .createdAt {
@@ -34,18 +42,34 @@
 
 .select {
 	padding: 8px;
-	border-radius: 8px;
+	border-radius: 5px;
+	font-size: 18px;
+	line-height: 21px;
+}
+
+.optionS {
+	padding: 8px;
+	border-radius: 5px;
+	height: 45px;
+	/* background-color: #DEDEDE; */
+}
+
+select.decorated option:hover {
+    box-shadow: 0 0 10px 100px #1882A8 inset;
+	background-color: #DEDEDE;
 }
 
 .homeLink {
-	display: block;
-	margin: 20px 0;
+	display: flex;
 	text-decoration: none;
 	color: #737373;
+	font-size: 32px;
+	justify-content: end;
+	margin-top: -15px;
 }
 
 .homeLink:hover {
-	color: #000;
+	color: #DEDEDE;
 }
 
 .emptyState {

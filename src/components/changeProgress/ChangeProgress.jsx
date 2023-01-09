@@ -26,7 +26,7 @@ function ChangeProgress({tasks, setTasks, type, lists, title, setChange}) {
                 if (task.status === lists[0]) {
                     // console.log(task.title)
                     return (<>
-                        <option value={task.title}>
+                        <option value={task.title} className={css.optionS}>
                             {task.title}
                         </option>
                     </>
@@ -47,7 +47,7 @@ function ChangeProgress({tasks, setTasks, type, lists, title, setChange}) {
                 if (task.status === lists[1]) {
                     // console.log(task.title)
                     return (<>
-                        <option value={task.title}>
+                        <option value={task.title} className={css.optionS}>
                             {task.title}
                         </option>
                     </>
@@ -68,7 +68,7 @@ function ChangeProgress({tasks, setTasks, type, lists, title, setChange}) {
                 if (task.status === lists[2]) {
                     // console.log(type)
                     return (<>
-                        <option value={task.title}>
+                        <option value={task.title} className={css.optionS}>
                             {task.title}
                         </option>
                         </>
