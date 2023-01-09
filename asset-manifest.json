@@ -1,21 +1,23 @@
 {
   "files": {
-    "main.css": "/Kaban-board/static/css/main.27adcf9a.chunk.css",
-    "main.js": "/Kaban-board/static/js/main.a1e0038b.chunk.js",
-    "main.js.map": "/Kaban-board/static/js/main.a1e0038b.chunk.js.map",
+    "main.css": "/Kaban-board/static/css/main.e24773ba.chunk.css",
+    "main.js": "/Kaban-board/static/js/main.07224a3c.chunk.js",
+    "main.js.map": "/Kaban-board/static/js/main.07224a3c.chunk.js.map",
     "runtime-main.js": "/Kaban-board/static/js/runtime-main.75f6d279.js",
     "runtime-main.js.map": "/Kaban-board/static/js/runtime-main.75f6d279.js.map",
-    "static/js/2.57575e31.chunk.js": "/Kaban-board/static/js/2.57575e31.chunk.js",
-    "static/js/2.57575e31.chunk.js.map": "/Kaban-board/static/js/2.57575e31.chunk.js.map",
+    "static/js/2.1cfb1475.chunk.js": "/Kaban-board/static/js/2.1cfb1475.chunk.js",
+    "static/js/2.1cfb1475.chunk.js.map": "/Kaban-board/static/js/2.1cfb1475.chunk.js.map",
     "index.html": "/Kaban-board/index.html",
-    "static/css/main.27adcf9a.chunk.css.map": "/Kaban-board/static/css/main.27adcf9a.chunk.css.map",
-    "static/js/2.57575e31.chunk.js.LICENSE.txt": "/Kaban-board/static/js/2.57575e31.chunk.js.LICENSE.txt",
+    "static/css/main.e24773ba.chunk.css.map": "/Kaban-board/static/css/main.e24773ba.chunk.css.map",
+    "static/js/2.1cfb1475.chunk.js.LICENSE.txt": "/Kaban-board/static/js/2.1cfb1475.chunk.js.LICENSE.txt",
+    "static/media/ArrowDown.9bf3f871.svg": "/Kaban-board/static/media/ArrowDown.9bf3f871.svg",
+    "static/media/ArrowUp.b525214c.svg": "/Kaban-board/static/media/ArrowUp.b525214c.svg",
     "static/media/logo.06e97418.svg": "/Kaban-board/static/media/logo.06e97418.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.75f6d279.js",
-    "static/js/2.57575e31.chunk.js",
-    "static/css/main.27adcf9a.chunk.css",
-    "static/js/main.a1e0038b.chunk.js"
+    "static/js/2.1cfb1475.chunk.js",
+    "static/css/main.e24773ba.chunk.css",
+    "static/js/main.07224a3c.chunk.js"
   ]
 }
