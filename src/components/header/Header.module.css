@@ -14,3 +14,7 @@
 .sprint {
 	margin-left: auto;
 }
+
+.ArrowDown, ArrowUp {
+	width: 12px;
+}
