@@ -19,8 +19,8 @@ function PersonalAccount() {
         </div>
         <div className={css.arrow}>
             <span>
-                <img className={css.ArrowDown} src={ArrowDown} alt='' />
-                {/* <img className={css.ArrowUp} src={ArrowUp} alt='' /> */}
+            {isFormVisible ? <img className={css.ArrowUp} src={ArrowUp} alt='' /> : <img className={css.ArrowDown} src={ArrowDown} alt='' />} 
+                
             </span>
         </div>
     </button>
