@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { BrowserRouter } from 'react-router-dom'
+import { HashRouter  } from 'react-router-dom'
 import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
 import Main from './components/main/Main'
@@ -14,13 +14,13 @@ function App() {
 	}, [tasks])
 
 	return (
-		<BrowserRouter>
+		<HashRouter>
 			<div className='wrapper'>
 				<Header />
 				<Main tasks={tasks} setTasks={setTasks} />
 				<Footer tasks={tasks} />
 			</div>
-		</BrowserRouter>
+		</HashRouter>
 	)
 }
 
