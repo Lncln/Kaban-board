@@ -1,4 +1,6 @@
 https://lncln.github.io/Kaban-board/
+Возникли серьезные проблемы с 
+
 
 # Getting Started with Create React App
 
