@@ -1,6 +1,7 @@
 https://lncln.github.io/Kaban-board/
 Возникли серьезные проблемы с disabled на кнопку
 
+Друзья зовут меня Рома-костыль
 
 # Getting Started with Create React App
 
