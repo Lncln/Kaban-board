@@ -1,5 +1,5 @@
 import css from './Footer.module.css'
-import { LIST_TYPES, LIST_COPY } from '../../config'
+import { LIST_TYPES, LIST_COPY } from '../../config.js'
 
 const Footer = props => {
 	const {tasks} = props
@@ -18,7 +18,7 @@ const Footer = props => {
 				})}
 			</div>
 			<div className={css.copy}>
-				Kanban board by <a href='https://github.com/ytokarevskaya' target='_blank' rel='noreferrer' style={{textDecoration: 'none'}}>@_gavrilovroman_</a> 
+				Kanban board by <a href='https://github.com/Lncln' target='_blank' rel='noreferrer' style={{textDecoration: 'none'}}>@_gavrilovroman_</a> 
 			</div>
 		</footer>
 	)

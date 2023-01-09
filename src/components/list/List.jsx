@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { LIST_TYPES } from '../../config'
+import { LIST_TYPES } from '../../config.js'
 import { Link } from 'react-router-dom'
 import FormAddNewTask from '../forms/FormAddNewTask'
 import ChangeProgress from '../changeProgress/ChangeProgress'
@@ -9,13 +9,21 @@ import css from './List.module.css'
 const List = props => {
 	const {title, type, tasks, addNewTask, setTasks, fullTaskList, lists} = props
 	const [isFormVisible, setFormVisible] = useState(false)
+	const [isChangeVisible, setChange] = useState(false)
+	const [isButtonDisabled, setButtonDisabled] = useState(false)
+
+	let cursorType = 'default'
+
+	if (!isButtonDisabled) {
+		cursorType = 'pointer'
+	}
 
 	function handleClick() {
 		setFormVisible(!isFormVisible)
 	}
-	
 
-	const [isChangeVisible, setChange] = useState(false)
+
+	
 
 	return (
 		<div className={css.list}>
@@ -31,28 +39,31 @@ const List = props => {
 				)
 			})}
 			{type === LIST_TYPES.BACKLOG && isFormVisible && (
-			<FormAddNewTask  addNewTask={addNewTask} setFormVisible={setFormVisible} />
+			<FormAddNewTask  addNewTask={addNewTask} setFormVisible={setFormVisible}/>
 			)}
-			{type === LIST_TYPES.READY && isFormVisible && (
-			<FormAddNewTask  addNewTask={addNewTask} setFormVisible={setFormVisible} />
+			{/* {type === LIST_TYPES.READY && isFormVisible && (
+			<FormAddNewTask  addNewTask={addNewTask} setFormVisible={setFormVisible}/>
 			)}		
 			{type === LIST_TYPES.IN_PROGRESS && isFormVisible && (
-			<FormAddNewTask  addNewTask={addNewTask} setFormVisible={setFormVisible} />
+			<FormAddNewTask  addNewTask={addNewTask} setFormVisible={setFormVisible}/>
 			)}
 			{type === LIST_TYPES.FINISHED && isFormVisible && (
-			<FormAddNewTask  addNewTask={addNewTask} setFormVisible={setFormVisible} />
-			)}
+			<FormAddNewTask  addNewTask={addNewTask} setFormVisible={setFormVisible}/>
+			)} */}
 			{type === LIST_TYPES.BACKLOG  && (
 			<button className={css.addButton} onClick={handleClick}>{isFormVisible ? '' : '+Add card'}</button>
 			)}
 			{type !== LIST_TYPES.BACKLOG  && isChangeVisible && (
 			<ChangeProgress  tasks={fullTaskList} setTasks={setTasks} title={title} type={type} lists={lists} setChange={setChange} />
 			)}
-			{type !== LIST_TYPES.BACKLOG  && (
-			<button className={css.addButton} onClick={() => setChange(true)}>{isChangeVisible ? '' : '+Add card'}</button>
+			{type !== LIST_TYPES.BACKLOG  && (<>
+			<button className={css.addButton} onClick={() => setChange(true)} disabled={isButtonDisabled} style={{cursor: cursorType}}>{isChangeVisible ? '' : '+Add card'}</button>
+			{/* не получается сделает disabled на кнопку */}
+			</>
 			)}
 		</div>
 	)
 }
+//  надо было разбивать листы на компоненты видимо
 
 export default List

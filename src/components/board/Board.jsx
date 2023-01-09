@@ -1,4 +1,4 @@
-import { LIST_TYPES, LIST_COPY} from '../../config'
+import { LIST_TYPES, LIST_COPY} from '../../config.js'
 import List from '../list/List'
 import css from './Board.module.css'
 import uuid from "react-uuid";
@@ -16,7 +16,6 @@ const Board = props => {
 		}
 		setTasks([...tasks, newTask])
 	}
-
 
 	const lists = ['backlog', 'Ready', 'inProgress', 'Finished']
 	return (

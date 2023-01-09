@@ -1,7 +1,7 @@
 import css from './TaskDetail.module.css'
 import { useRouteMatch, Link } from 'react-router-dom'
-import { LIST_TYPES, LIST_COPY, LIST_COLORS } from '../../config'
-import { formatDate } from '../../utils'
+import { LIST_TYPES, LIST_COPY, LIST_COLORS } from '../../config.js'
+import { formatDate } from '../../utils.js'
 import { useState } from 'react'
 
 

@@ -1,6 +1,6 @@
 import React from "react"
 import css from '../task-detail/TaskDetail.module.css'
-import { LIST_TYPES, LIST_COPY, LIST_COLORS } from '../../config'
+import { LIST_TYPES, LIST_COPY, LIST_COLORS } from '../../config.js'
 
 function ChangeProgress({tasks, setTasks, type, lists, title, setChange}) {
 
@@ -16,7 +16,6 @@ function ChangeProgress({tasks, setTasks, type, lists, title, setChange}) {
         }));
         setChange(false)
 	}
-
 
     if (type === LIST_TYPES.READY) {
         return (<>

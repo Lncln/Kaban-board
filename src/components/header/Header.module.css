@@ -11,10 +11,36 @@
 	margin-right: 15px;
 }
 
-.sprint {
+.PersonalAccount {
+	display: flex;
 	margin-left: auto;
+	margin-right: 15px;
 }
 
 .ArrowDown, ArrowUp {
 	width: 12px;
+}
+
+.PersonalAccountPhoto {
+	background-color: #fff;
+	display: flex;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	justify-content: center;
+}
+
+.UserPhoto {
+	color: #000;
+	width: 26.2px;
+	height: 33.45px;
+	align-self: end;
+}
+
+.arrow {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
