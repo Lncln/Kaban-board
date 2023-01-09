@@ -4,6 +4,9 @@ import { Switch, Route } from 'react-router-dom'
 import TaskDetail from '../task-detail/TaskDetail'
 
 function Main ({ tasks, setTasks }) {
+
+	
+
 	return (
 		<main className={css.main} >
 			<Switch>

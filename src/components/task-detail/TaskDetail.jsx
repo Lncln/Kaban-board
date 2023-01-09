@@ -9,7 +9,7 @@ const TaskDetail = props => {
 	const {tasks, setTasks} = props
 	const match = useRouteMatch()
 	const {taskId} = match.params
-
+	// console.log(taskId)
 	const [value, setValue] = useState('');
 	const task = tasks.find(task => task.id === taskId)
 	const [isOnfocus, setOnFocus] = useState(false)
@@ -17,8 +17,9 @@ const TaskDetail = props => {
 
 	function changeDescription(e) {
 		setTasks(tasks.map(task => {
+			console.log(task)
             if (task.id === taskId) {
-                return {...task, description: value};
+                return {...task, description: e.target.value};
             } else {
                 return task;
             }
@@ -38,7 +39,7 @@ const TaskDetail = props => {
 					</h2>
 				</div>
 				<p>
-				{isOnfocus ?  <textarea value={value} onChange={event => setValue(event.target.value)} onBlur={changeDescription} placeholder='Enter description' cols="30" rows="10" autofocus={true} /> : <span onClick={() => setOnFocus(true)}>{value || 'This task has no description'}</span>}
+				{isOnfocus ?  <textarea value={value} onChange={event => setValue(event.target.value)} onBlur={changeDescription}  placeholder='Enter description' cols="30" rows="10" autoFocus  /> : <span onClick={() => setOnFocus(true)}>{task.description || 'This task has no description'}</span>}
 				</p>
 			</>
 		) : (
