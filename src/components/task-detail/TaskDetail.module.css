@@ -2,24 +2,29 @@
 	background: #fff;
 	border-radius: 5px;
 	padding: 20px;
-	flex-wrap: wrap;
+	display: flex;
+	flex-direction: column;
+	height: 50vh;
+	margin: 20px;
 }
 
 .header {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	/* align-items: center; */
 }
 
 .title {
 	margin: 0;
 	font-size: 24px;
 	line-height: 28px;
+	display: inline-flex;
 }
 
 .description {
 	font-size: 18px;
 	line-height: 21px;
+	margin-top: 35px;
 }
 
 .createdAt {
@@ -64,9 +69,9 @@ select.decorated option:hover {
 	text-decoration: none;
 	color: #737373;
 	font-size: 32px;
-	justify-content: end;
-	margin-top: -15px;
+	margin-top: -16px;
 }
+
 
 .homeLink:hover {
 	color: #DEDEDE;

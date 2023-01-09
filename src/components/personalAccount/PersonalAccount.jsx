@@ -6,10 +6,14 @@ import UserPhoto from '../../assets/Photo.svg'
 
 
 function PersonalAccount() {
+    const [isFormVisible, setFormVisible] = useState(false)
 
+    function handleClick() {
+        setFormVisible(!isFormVisible)
+    }
 
-    return (<>
-    <button className={css.PersonalAccount}>
+    return (<div className={css.wrapper}>
+    <button className={css.PersonalAccount} onClick={handleClick}>
         <div className={css.PersonalAccountPhoto}>
             <img className={css.UserPhoto} src={UserPhoto} alt='' />
         </div>
@@ -20,7 +24,13 @@ function PersonalAccount() {
             </span>
         </div>
     </button>
-    </>
+    {isFormVisible && (
+    <div className={css.molu}>
+        <span className={css.moluOption}>Profile</span>
+        <span className={css.moluOption}>Log out</span>
+    </div>
+    )}
+    </div>
     )
 }
 

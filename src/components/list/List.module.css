@@ -9,6 +9,7 @@
 	font-family: 'Roboto', Roboto;
 	font-size: 18px;
 	line-height: 21px;
+	/* max-height: 538px;  xdd  */
 }
 
 .listTitle {
@@ -49,3 +50,4 @@
 .addButton:hover {
 	color: #000;
 }
+
