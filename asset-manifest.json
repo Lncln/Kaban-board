@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Kaban-board/static/css/main.bfcd7d65.chunk.css",
-    "main.js": "/Kaban-board/static/js/main.aa85a31d.chunk.js",
-    "main.js.map": "/Kaban-board/static/js/main.aa85a31d.chunk.js.map",
+    "main.js": "/Kaban-board/static/js/main.a6cbbaa0.chunk.js",
+    "main.js.map": "/Kaban-board/static/js/main.a6cbbaa0.chunk.js.map",
     "runtime-main.js": "/Kaban-board/static/js/runtime-main.75f6d279.js",
     "runtime-main.js.map": "/Kaban-board/static/js/runtime-main.75f6d279.js.map",
-    "static/js/2.1c49ec18.chunk.js": "/Kaban-board/static/js/2.1c49ec18.chunk.js",
-    "static/js/2.1c49ec18.chunk.js.map": "/Kaban-board/static/js/2.1c49ec18.chunk.js.map",
+    "static/js/2.cc3a648c.chunk.js": "/Kaban-board/static/js/2.cc3a648c.chunk.js",
+    "static/js/2.cc3a648c.chunk.js.map": "/Kaban-board/static/js/2.cc3a648c.chunk.js.map",
     "index.html": "/Kaban-board/index.html",
     "static/css/main.bfcd7d65.chunk.css.map": "/Kaban-board/static/css/main.bfcd7d65.chunk.css.map",
-    "static/js/2.1c49ec18.chunk.js.LICENSE.txt": "/Kaban-board/static/js/2.1c49ec18.chunk.js.LICENSE.txt",
+    "static/js/2.cc3a648c.chunk.js.LICENSE.txt": "/Kaban-board/static/js/2.cc3a648c.chunk.js.LICENSE.txt",
     "static/media/ArrowDown.9bf3f871.svg": "/Kaban-board/static/media/ArrowDown.9bf3f871.svg",
     "static/media/ArrowUp.b525214c.svg": "/Kaban-board/static/media/ArrowUp.b525214c.svg",
     "static/media/Kaban.73df7021.png": "/Kaban-board/static/media/Kaban.73df7021.png",
@@ -17,8 +17,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.75f6d279.js",
-    "static/js/2.1c49ec18.chunk.js",
+    "static/js/2.cc3a648c.chunk.js",
     "static/css/main.bfcd7d65.chunk.css",
-    "static/js/main.aa85a31d.chunk.js"
+    "static/js/main.a6cbbaa0.chunk.js"
   ]
 }
