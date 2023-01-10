@@ -10,9 +10,14 @@ const List = props => {
 	const {title, type, tasks, addNewTask, setTasks, fullTaskList, lists} = props
 	const [isFormVisible, setFormVisible] = useState(false)
 	const [isChangeVisible, setChange] = useState(false)
-	const [isButtonDisabled, setButtonDisabled] = useState(false)
+	// const [isButtonDisabled, setButtonDisabled] = useState(false)
 
-	let cursorType = 'default'
+	let cursorType = 'default';
+	let isButtonDisabled = true;
+
+	if (fullTaskList.length > 0) {
+		isButtonDisabled = false;
+	}
 
 	if (!isButtonDisabled) {
 		cursorType = 'pointer'
@@ -21,6 +26,7 @@ const List = props => {
 	function handleClick() {
 		setFormVisible(!isFormVisible)
 	}
+
 
 
 	
@@ -33,7 +39,6 @@ const List = props => {
 					<Link to={`/tasks/${task.id}`} className={css.taskLink}>
 						<div key={task.id} className={css.task}>
 							{task.title}
-							
 						</div>
 					</Link>
 				)
@@ -41,15 +46,6 @@ const List = props => {
 			{type === LIST_TYPES.BACKLOG && isFormVisible && (
 			<FormAddNewTask  addNewTask={addNewTask} setFormVisible={setFormVisible}/>
 			)}
-			{/* {type === LIST_TYPES.READY && isFormVisible && (
-			<FormAddNewTask  addNewTask={addNewTask} setFormVisible={setFormVisible}/>
-			)}		
-			{type === LIST_TYPES.IN_PROGRESS && isFormVisible && (
-			<FormAddNewTask  addNewTask={addNewTask} setFormVisible={setFormVisible}/>
-			)}
-			{type === LIST_TYPES.FINISHED && isFormVisible && (
-			<FormAddNewTask  addNewTask={addNewTask} setFormVisible={setFormVisible}/>
-			)} */}
 			{type === LIST_TYPES.BACKLOG  && (
 			<button className={css.addButton} onClick={handleClick}>{isFormVisible ? '' : '+Add card'}</button>
 			)}
